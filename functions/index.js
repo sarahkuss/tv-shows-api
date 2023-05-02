@@ -14,7 +14,7 @@ app.post("/login", login)
 
 // Show Routes:
 app.get("/shows", getShows)
-app.post("/shows", addShow)
+app.post("/shows", addShow) // we want to protect, so someone has to login to add a show
 app.delete("/shows/:showId", deleteShow)
 
 //lets us run locally without emultators
